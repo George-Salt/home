@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+
+:root {
+  --bgc: yellow;
+}
+
+
+@media screen and (min-width:730px) {
+  body {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: black;
+    width: 0.5vw;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--bgc);
+  }
+
+
+  main > section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid grey;
+  }
+
+  main .content {
+    width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  main a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  main .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+  }
+
+  main .about > img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid var(--bgc);
+    background-image: url("../imgs/photo-background.png");
+    background-size: cover;
+    margin-right: 50px;
+  }
+
+  main .about h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  main .about p {
+    margin: 0;
+    font-size: 20px;
+    color: grey;
+  }
+
+  main .about .desc {
+    margin-bottom: 10px;
+  }
+
+  main .about a {
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--bgc);
+    transition: all 0.3s;
+  }
+
+  main .about a:hover {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: var(--bgc);
+    text-decoration: none;
+    color: black;
+  }
+
+
+  main .link {
+    height: 400px;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s;
+  }
+
+  main .link.blog {
+    background-image: url("../imgs/blog-background.png");
+  }
+
+  main .link.site {
+    background-image: url("../imgs/portfolio-background.png");
+  }
+
+  main .link.apps {
+    background-image: url("../imgs/apps-background.png");
+  }
+
+  main .link:hover {
+    scale: 0.98;
+  }
+
+  main .link:hover * {
+    scale: 1.05;
+  }
+
+  main .link * {
+    transition: all 0.5s;
+  }
+
+  main .link .name {
+    font-family: "Bebas Neue", sans-serif;
+    border-bottom: 1.5px solid white;
+  }
+
+  main .link h1 {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+  }
+
+  main > .ad > .content > h1 {
+    border-bottom: 1.5px solid var(--bgc);
+  }
+
+
+  main .columns {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main .columns h1 {
+    border-bottom: 1.5px solid var(--bgc);
+    margin: 0;
+  }
+
+  main .column {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 150px;
+  }
+
+  main .column a {
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    transition: all 0.3s;
+  }
+
+  main .column a:hover {
+    font-weight: 800;
+    color: black;
+    padding: 5px;
+    background-color: var(--bgc);
+  }
+}
+
+@media screen and (max-width:730px) {
+  body {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  main > section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid grey;
+  }
+
+  main .content {
+    width: 95vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  main a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  main .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  main .about > img {
+    width: 90%;
+    border-radius: 50%;
+    border: 2px solid var(--bgc);
+    background-image: url("../imgs/photo-background.png");
+    background-size: cover;
+  }
+
+  main .about h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  main .about p {
+    margin: 0;
+    font-size: 20px;
+    color: grey;
+  }
+
+  main .about .desc {
+    margin-bottom: 10px;
+  }
+
+  main .about a {
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--bgc);
+    transition: all 0.3s;
+  }
+
+  main .about a:hover {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: var(--bgc);
+    text-decoration: none;
+    color: black;
+  }
+
+
+  main .link {
+    height: 400px;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  main .link.blog {
+    background-image: url("../imgs/blog-background.png");
+  }
+
+  main .link.site {
+    background-image: url("../imgs/portfolio-background.png");
+  }
+
+  main .link.apps {
+    background-image: url("../imgs/apps-background.png");
+  }
+
+  main .link:hover {
+    scale: 0.98;
+  }
+
+  main .link:hover * {
+    scale: 1.05;
+  }
+
+  main .link * {
+    transition: all 0.5s;
+  }
+
+  main .link .name {
+    font-family: "Bebas Neue", sans-serif;
+    border-bottom: 1.5px solid white;
+  }
+
+  main .link h1 {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+  }
+
+  main > .ad > .content > h1 {
+    border-bottom: 1.5px solid var(--bgc);
+  }
+
+
+  main .columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+    text-align: center;
+  }
+
+  main .columns h1 {
+    border-bottom: 1.5px solid var(--bgc);
+    margin: 0;
+  }
+
+  main .column {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 150px;
+    margin: auto 5px;
+    margin-bottom: 20px;
+  }
+
+  main .column a {
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    transition: all 0.3s;
+  }
+
+  main .column a:hover {
+    font-weight: 800;
+    color: black;
+    padding: 5px;
+    background-color: var(--bgc);
+  }
+}
